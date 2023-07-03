@@ -18,4 +18,9 @@ public class Util {
         }
         return conn;
     }
+
+    public static Connection closeConnection() throws SQLException {
+        conn.close();
+        return null;
+    }
 }

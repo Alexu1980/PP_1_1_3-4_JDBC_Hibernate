@@ -2,7 +2,6 @@ package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +11,6 @@ public class UserDaoJDBCImpl implements UserDao {
     private static final Connection conn = Util.getConnection();
 
     public UserDaoJDBCImpl() {
-
     }
 
     // Создание таблицы для User(ов) – не должно приводить к исключению, если такая таблица уже существует
